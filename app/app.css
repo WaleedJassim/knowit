@@ -1,15 +1,60 @@
 @import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-@theme {
-  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+:root {
+  /* primary colors */
+  --primary: hsla(50, 100%, 49%, 1);
+  --primary-75: hsla(50, 100%, 49%, 0.75);
+  --primary-50: hsla(50, 100%, 49%, 0.5);
+  --primary-25: hsla(50, 100%, 49%, 0.25);
+  --primary-10: hsla(50, 100%, 49%, 0.1);
+  --primary-5: hsla(50, 100%, 49%, 0.05);
+  /* text colors */
+  --text-primary: hsla(224, 42%, 24%, 1);
+  --text-muted-10: hsla(0, 11%, 22%, 0.1);
+  --text-muted-25: hsla(0, 11%, 22%, 0.25);
+  --text-muted-5: hsla(0, 11%, 22%, 0.05);
+  --text-muted-50: hsla(0, 11%, 22%, 0.5);
+  --text-secondary: hsla(0, 0%, 40%, 1);
+  /* white colors */
+  --white: hsla(0, 0%, 100%, 1);
+  --white-10: hsla(0, 0%, 100%, 0.1);
+  --white-25: hsla(0, 0%, 100%, 0.25);
+  --white-5: hsla(0, 0%, 100%, 0.05);
+  --white-50: hsla(0, 0%, 100%, 0.5);
+  --white-75: hsla(0, 0%, 100%, 0.75);
+}
+
+@theme inline {
+  /* primary colors */
+  --color-primary: var(--primary);
+  --color-primary-75: var(--primary-75);
+  --color-primary-50: var(--primary-50);
+  --color-primary-25: var(--primary-25);
+  --color-primary-10: var(--primary-10);
+  --color-primary-5: var(--primary-5);
+  /* text colors */
+  --text-color-primary: var(--text-primary);
+  --text-color-muted-10: var(--text-muted-10);
+  --text-color-muted-25: var(--text-muted-25);
+  --text-color-muted-5: var(--text-muted-5);
+  --text-color-muted-50: var(--text-muted-50);
+  --text-color-secondary: var(--text-secondary);
+  /* white colors */
+  --color-white: var(--white);
+  --color-white-10: var(--white-10);
+  --color-white-25: var(--white-25);
+  --color-white-5: var(--white-5);
+  --color-white-50: var(--white-50);
+  --color-white-75: var(--white-75);
 }
 
 html,
 body {
   @apply bg-white dark:bg-black;
-
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+
+  font-family: 'DM Sans', serif;
 }
