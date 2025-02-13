@@ -23,6 +23,10 @@
   --white-5: hsla(0, 0%, 100%, 0.05);
   --white-50: hsla(0, 0%, 100%, 0.5);
   --white-75: hsla(0, 0%, 100%, 0.75);
+  /* background colors */
+  --background: hsla(0, 0%, 5%, 1);
+  /* alternative colors */
+  --golden: hsla(45, 100%, 50%, 1);
 }
 
 @theme inline {
@@ -47,14 +51,21 @@
   --color-white-5: var(--white-5);
   --color-white-50: var(--white-50);
   --color-white-75: var(--white-75);
+  /* background colors */
+  --color-background: var(--background);
+  /* alternative colors */
+  --color-golden: var(--golden);
 }
 
 html,
 body {
-  @apply bg-white dark:bg-black;
+  @apply bg-white dark:bg-background;
+
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
 
-  font-family: 'DM Sans', serif;
+  * {
+    font-family: 'DM Sans', serif;
+  }
 }
