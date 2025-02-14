@@ -1,55 +1,22 @@
 import { NavLink } from 'react-router';
-import Logo from '../../assets/images/knowit-white.png';
-import { Button } from '../ui/button';
-
-const links = [
-	{
-		name: 'Home',
-		path: '/',
-	},
-	{
-		name: 'Courses',
-		path: '/courses',
-	},
-	{
-		name: 'Vacancies',
-		path: '/vacancies',
-	},
-	{
-		name: 'Blog',
-		path: '/blog',
-	},
-	{
-		name: 'Our Team',
-		path: '/team',
-	},
-	{
-		name: 'Placements',
-		path: '/placements',
-	},
-	{
-		name: 'About Us',
-		path: '/about',
-	},
-	{
-		name: 'Contact Us',
-		path: '/contact',
-	},
-];
+import Logo from '~/assets/images/knowit-white.png';
+import { Button } from '~/components/ui/button';
+import { links, type Link } from '~/lib/constants';
 
 const Navbar = () => {
 	return (
-		<div className="p-6 bg-transparent flex justify-between items-center">
+		<div className="p-6 bg-transparent flex justify-between items-center sticky top-0 z-50">
 			<img src={Logo} alt="Knowit" className="w-32" />
 			<div className="flex items-center gap-10">
-				{links.map((link) => (
+				{links.map((link: Link) => (
 					<NavLink
 						to={link.path}
 						className={({ isActive }) =>
-							`${isActive ? 'text-(--color-primary)' : 'text-white'}`
+							`transition-all ${isActive ? 'active-navlink' : 'text-white'}`
 						}
 					>
 						{link.name}
+						<div className="active-line"></div>
 					</NavLink>
 				))}
 			</div>
