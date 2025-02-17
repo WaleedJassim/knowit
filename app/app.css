@@ -9,6 +9,7 @@
 	--primary-25: hsla(50, 100%, 49%, 0.25);
 	--primary-10: hsla(50, 100%, 49%, 0.1);
 	--primary-5: hsla(50, 100%, 49%, 0.05);
+
 	/* text colors */
 	--text-primary: hsla(224, 42%, 24%, 1);
 	--text-muted-10: hsla(0, 11%, 22%, 0.1);
@@ -16,6 +17,7 @@
 	--text-muted-5: hsla(0, 11%, 22%, 0.05);
 	--text-muted-50: hsla(0, 11%, 22%, 0.5);
 	--text-secondary: hsla(0, 0%, 40%, 1);
+
 	/* white colors */
 	--white: hsla(0, 0%, 100%, 1);
 	--white-10: hsla(0, 0%, 100%, 0.1);
@@ -24,10 +26,13 @@
 	--white-50: hsla(0, 0%, 100%, 0.5);
 	--white-75: hsla(0, 0%, 100%, 0.75);
 	--white-4: hsla(0, 0%, 100%, 0.04);
+
 	/* background colors */
 	--background: hsla(0, 0%, 5%, 1);
+
 	/* alternative colors */
 	--golden: hsla(45, 100%, 50%, 1);
+
 	/* placeholder colors */
 	--placeholder: hsla(0, 0%, 58%, 1);
 }
@@ -40,6 +45,7 @@
 	--color-primary-25: var(--primary-25);
 	--color-primary-10: var(--primary-10);
 	--color-primary-5: var(--primary-5);
+
 	/* text colors */
 	--text-color-primary: var(--text-primary);
 	--text-color-muted-10: var(--text-muted-10);
@@ -47,6 +53,7 @@
 	--text-color-muted-5: var(--text-muted-5);
 	--text-color-muted-50: var(--text-muted-50);
 	--text-color-secondary: var(--text-secondary);
+
 	/* white colors */
 	--color-white: var(--white);
 	--color-white-10: var(--white-10);
@@ -55,10 +62,13 @@
 	--color-white-50: var(--white-50);
 	--color-white-75: var(--white-75);
 	--color-white-4: var(--white-4);
+
 	/* background colors */
 	--color-background: var(--background);
+
 	/* alternative colors */
 	--color-golden: var(--golden);
+
 	/* placeholder colors */
 	--text-placeholder: var(--placeholder);
 }
@@ -73,6 +83,7 @@ body {
 
 	* {
 		font-family: 'DM Sans', serif;
+		@apply transition-all duration-300;
 	}
 }
 

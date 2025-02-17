@@ -1,10 +1,12 @@
+import Certificates from './components/certificates';
 import Hero from './components/hero';
 
 const HomePage = () => {
 	return (
-		<div>
+		<>
 			<Hero />
-		</div>
+			<Certificates />
+		</>
 	);
 };
 
