@@ -3,7 +3,11 @@ import Logo from '~/assets/images/knowit-white.png';
 const Footer = () => {
 	return (
 		<div className="bg-background">
-			<div className="px-6 py-12 border-b border-white">
+			<div className="px-6 py-12 border-b border-white flex justify-between items-center">
+				<div>
+					<p>Address</p>
+					<p></p>
+				</div>
 				<img src={Logo} alt="Knowit" className="w-2xs" />
 			</div>
 			<div className="p-6">

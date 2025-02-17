@@ -4,11 +4,11 @@ import Navbar from '~/components/shared/navbar';
 
 const Layout = () => {
 	return (
-		<>
+		<div className="flex flex-col">
 			<Navbar />
 			<Outlet />
 			<Footer />
-		</>
+		</div>
 	);
 };
 

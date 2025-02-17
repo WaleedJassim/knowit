@@ -5,11 +5,12 @@ import { links, type Link } from '~/lib/constants';
 
 const Navbar = () => {
 	return (
-		<div className="p-6 bg-transparent flex justify-between items-center sticky top-0 z-50">
+		<div className="p-6 flex justify-between items-center sticky top-0 z-50 transition-all duration-300 bg-white-4 backdrop-blur-3xl">
 			<img src={Logo} alt="Knowit" className="w-32" />
 			<div className="flex items-center gap-10">
 				{links.map((link: Link) => (
 					<NavLink
+						key={link.path}
 						to={link.path}
 						className={({ isActive }) =>
 							`transition-all ${isActive ? 'active-navlink' : 'text-white'}`

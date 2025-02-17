@@ -1,5 +1,5 @@
-@import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import 'tailwindcss';
 
 :root {
 	/* primary colors */
@@ -23,10 +23,13 @@
 	--white-5: hsla(0, 0%, 100%, 0.05);
 	--white-50: hsla(0, 0%, 100%, 0.5);
 	--white-75: hsla(0, 0%, 100%, 0.75);
+	--white-4: hsla(0, 0%, 100%, 0.04);
 	/* background colors */
 	--background: hsla(0, 0%, 5%, 1);
 	/* alternative colors */
 	--golden: hsla(45, 100%, 50%, 1);
+	/* placeholder colors */
+	--placeholder: hsla(0, 0%, 58%, 1);
 }
 
 @theme inline {
@@ -51,10 +54,13 @@
 	--color-white-5: var(--white-5);
 	--color-white-50: var(--white-50);
 	--color-white-75: var(--white-75);
+	--color-white-4: var(--white-4);
 	/* background colors */
 	--color-background: var(--background);
 	/* alternative colors */
 	--color-golden: var(--golden);
+	/* placeholder colors */
+	--text-placeholder: var(--placeholder);
 }
 
 html,
