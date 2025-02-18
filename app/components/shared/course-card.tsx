@@ -29,7 +29,9 @@ const CourseCard = ({ data }: { data: Course }) => {
 							₹ {data?.originalPrice}
 						</p>
 					</div>
-					<Button>Enroll Now</Button>
+					<Button className="hover:bg-background hover:border-background">
+						Enroll Now
+					</Button>
 				</div>
 			</div>
 		</div>
