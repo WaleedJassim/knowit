@@ -16,7 +16,7 @@ const Vacancies = () => {
 					Ready to take the next step in your career
 				</p>
 			</div>
-			<div className="w-full">
+			<div className="w-full mt-12">
 				<AlignedCarousel slides={SLIDES} options={OPTIONS} />
 			</div>
 		</div>
