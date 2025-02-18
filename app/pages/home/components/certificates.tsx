@@ -3,7 +3,7 @@ import { CertificateImages } from '~/assets/images/certificates';
 
 const Certificates = () => {
 	return (
-		<div className="bg-white py-3">
+		<div className="bg-white py-2">
 			<div
 				className="bg-background bg-cover bg-no-repeat px-12 py-16 flex sm:flex-row flex-col justify-evenly gap-6"
 				style={{
@@ -23,8 +23,11 @@ const Certificates = () => {
 					</p>
 				</div>
 				<div className="grid grid-cols-4 gap-14">
-					{CertificateImages.map((image) => (
-						<div className="w-28 aspect-square rounded-2xl [&:nth-child(4)]:rounded-full bg-white px-2 flex items-center justify-center">
+					{CertificateImages.map((image, index) => (
+						<div
+							key={index}
+							className="w-28 aspect-square rounded-2xl [&:nth-child(4)]:rounded-full bg-white px-2 flex items-center justify-center"
+						>
 							<img src={image.src} alt={image.name} />
 						</div>
 					))}

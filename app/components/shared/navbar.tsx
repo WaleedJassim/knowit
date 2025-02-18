@@ -8,9 +8,9 @@ const Navbar = () => {
 		<div className="p-6 flex justify-between items-center sticky top-0 z-50 transition-all duration-300 bg-white-4 backdrop-blur-3xl">
 			<img src={Logo} alt="Knowit" className="w-32" />
 			<div className="flex items-center gap-10">
-				{links.map((link: Link) => (
+				{links.map((link: Link, index) => (
 					<NavLink
-						key={link.path}
+						key={index}
 						to={link.path}
 						className={({ isActive }) =>
 							`transition-all ${isActive ? 'active-navlink' : 'text-white'}`

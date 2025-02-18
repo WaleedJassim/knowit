@@ -1,4 +1,5 @@
 import Certificates from './components/certificates';
+import Courses from './components/courses';
 import Hero from './components/hero';
 
 const HomePage = () => {
@@ -6,6 +7,7 @@ const HomePage = () => {
 		<>
 			<Hero />
 			<Certificates />
+			<Courses />
 		</>
 	);
 };

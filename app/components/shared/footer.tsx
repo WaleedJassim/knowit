@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import { HeadPhoneIcon, MailIcon } from '~/assets/icons';
 import Logo from '~/assets/images/knowit-white.png';
 import type { Link as TLink } from '~/lib/constants';
 
@@ -52,8 +53,9 @@ const Footer = () => {
 					<p>Kochi - 682018 Phone: 7994288555</p>
 				</div>
 				<div className="grid grid-cols-3 gap-3">
-					{links.map((link: TLink) => (
+					{links.map((link: TLink, index) => (
 						<Link
+							key={index}
 							to={link.path}
 							className="text-lg hover:text-(--color-primary)"
 						>
@@ -63,8 +65,22 @@ const Footer = () => {
 				</div>
 				<img src={Logo} alt="Knowit" className="w-2xs" />
 			</div>
-			<div className="p-6">
+			<div className="p-6 flex items-center justify-between">
 				<span>© 2025, Knowit - All rights reserved</span>
+				<div className="p-6 flex items-center gap-12">
+					<div className="flex items-center gap-1">
+						<MailIcon />
+						<p>
+							<span className="font-medium">Email</span>: knowit.com
+						</p>
+					</div>
+					<div className="flex items-center gap-1">
+						<HeadPhoneIcon />
+						<p>
+							<span className="font-medium">Call Us</span>: (+91) - 984578174
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
