@@ -1,6 +1,7 @@
 import type { Course } from '~/lib/dummy-data';
 import { AvatarGroup } from '../ui/avatar';
 import { Button } from '../ui/button';
+import { StarIcon, StarIcon as StarOutlineIcon } from '~/assets/icons';
 
 const CourseCard = ({ data }: { data: Course }) => {
 	return (
@@ -18,9 +19,18 @@ const CourseCard = ({ data }: { data: Course }) => {
 				<div className="flex gap-1 flex-col">
 					<p className="text-base font-extrabold">{data?.courseName}</p>
 					<p className="text-sm">{data?.description}</p>
-					<p className="text-[13px] font-medium text-[#7F7F7F]">
-						{data?.rating}
-					</p>
+					<div className="flex items-center gap-1.5">
+						<p className="text-[13px] font-medium text-[#7F7F7F]">
+							{data?.rating.toFixed(1)}
+						</p>
+						<div className="flex items-center gap-0.5">
+							{Array(5)
+								.fill(0)
+								.map((_, index) => (
+									<StarIcon key={index} />
+								))}
+						</div>
+					</div>
 				</div>
 				<div className="flex items-center justify-between">
 					<div className="text-base flex items-center gap-2">
