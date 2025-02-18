@@ -26,7 +26,7 @@ const Certificates = () => {
 					{CertificateImages.map((image, index) => (
 						<div
 							key={index}
-							className="w-28 aspect-square rounded-2xl [&:nth-child(4)]:rounded-full bg-white px-2 flex items-center justify-center"
+							className="w-28 aspect-square rounded-2xl overflow-hidden [&:nth-child(4)]:rounded-full [&:nth-child(5)]:rounded-full bg-white px-2 flex items-center justify-center"
 						>
 							<img src={image.src} alt={image.name} />
 						</div>
