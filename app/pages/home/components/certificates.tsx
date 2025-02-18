@@ -22,7 +22,7 @@ const Certificates = () => {
 						open doors to exciting opportunities
 					</p>
 				</div>
-				<div className="grid grid-cols-4 gap-14">
+				<div className="grid grid-cols-2 sm:grid-cols-4 gap-14">
 					{CertificateImages.map((image, index) => (
 						<div
 							key={index}
