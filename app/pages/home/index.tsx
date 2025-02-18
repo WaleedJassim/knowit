@@ -2,6 +2,9 @@ import AboutUs from './components/about-us';
 import Certificates from './components/certificates';
 import Courses from './components/courses';
 import Hero from './components/hero';
+import Partners from './components/partners';
+import SuccessStories from './components/success-stories';
+import Vacancies from './components/vacancies';
 
 const HomePage = () => {
 	return (
@@ -10,6 +13,9 @@ const HomePage = () => {
 			<Certificates />
 			<Courses />
 			<AboutUs />
+			<Vacancies />
+			<Partners />
+			<SuccessStories />
 		</>
 	);
 };
