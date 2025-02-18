@@ -21,6 +21,8 @@ const Courses = () => {
 							</Button>
 						))}
 					</div>
+				</div>
+				<div className="w-full flex justify-end">
 					<Button>See All</Button>
 				</div>
 				<div className="flex gap-9">

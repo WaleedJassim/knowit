@@ -1,18 +1,19 @@
 import Background from '~/assets/images/bg.png';
 import { Button } from '~/components/ui/button';
 import { Input } from '~/components/ui/input';
+import Banner from '~/assets/images/banner.png';
 
 const Hero = () => {
 	return (
 		<div>
 			<div
-				className="h-full flex flex-col sm:flex-row items-center justify-evenly pb-16 pt-24 w-full bg-cover bg-no-repeat"
+				className="h-full flex flex-col sm:flex-row items-center justify-evenly w-full bg-cover bg-no-repeat sm:px-32 px-6"
 				style={{
 					backgroundImage: `url(${Background})`,
 					backgroundPosition: 'center top -86px',
 				}}
 			>
-				<div className="flex flex-col items-start justify-center ps-6 sm:ps-28 md:ps-52 pe-6 gap-3">
+				<div className="flex flex-col items-start justify-center gap-3">
 					<p>Start your favourite course</p>
 					<p className="text-(--color-primary) font-bold text-4xl">
 						Now learning from
@@ -26,7 +27,9 @@ const Hero = () => {
 						every step of the way
 					</p>
 				</div>
-				<div className="w-full"></div>
+				<div className="w-full">
+					<img src={Banner} alt="" />
+				</div>
 			</div>
 			<div className="py-10 sm:px-32 px-6 bg-primary">
 				<Input placeholder="Search courses, jobs, or educators" />
