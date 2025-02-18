@@ -1,5 +1,5 @@
-import AlignedCarousel from '~/components/shared/aligned-carousel';
 import type { EmblaOptionsType } from 'embla-carousel';
+import AlignedCarousel from '~/components/shared/aligned-carousel';
 import JobCard from '~/components/shared/job-card';
 
 const OPTIONS: EmblaOptionsType = { containScroll: false };

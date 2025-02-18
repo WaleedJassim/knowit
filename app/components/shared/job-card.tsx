@@ -1,6 +1,5 @@
-import React from 'react';
-import { Button } from '../ui/button';
 import { ExternalLink } from 'lucide-react';
+import { Button } from '../ui/button';
 
 const JobCard = () => {
 	return (

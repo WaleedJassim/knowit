@@ -1,0 +1,88 @@
+{
+  "buildManifest": {
+    "serverBundles": {
+      "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0": {
+        "id": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+        "file": "build/server/nodejs-eyJydW50aW1lIjoibm9kZWpzIn0/index.js",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    },
+    "routeIdToServerBundleId": {
+      "root": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/home": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/courses": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0"
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "app/root.tsx",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "pages/layout": {
+        "id": "pages/layout",
+        "parentId": "root",
+        "file": "app/pages/layout.tsx",
+        "config": {}
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "pages/layout",
+        "file": "app/routes/home.tsx",
+        "index": true,
+        "config": {}
+      },
+      "routes/courses": {
+        "id": "routes/courses",
+        "parentId": "pages/layout",
+        "file": "app/routes/courses.tsx",
+        "path": "/courses",
+        "config": {}
+      }
+    }
+  },
+  "reactRouterConfig": {
+    "appDirectory": "/home/jassim/Work/knowit/app",
+    "basename": "/",
+    "buildDirectory": "/home/jassim/Work/knowit/build",
+    "future": {
+      "unstable_optimizeDeps": false
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.tsx"
+      },
+      "pages/layout": {
+        "id": "pages/layout",
+        "parentId": "root",
+        "file": "./pages/layout.tsx"
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "pages/layout",
+        "file": "./routes/home.tsx",
+        "index": true
+      },
+      "routes/courses": {
+        "id": "routes/courses",
+        "parentId": "pages/layout",
+        "file": "./routes/courses.tsx",
+        "path": "/courses"
+      }
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": true
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}

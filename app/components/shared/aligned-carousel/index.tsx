@@ -1,8 +1,8 @@
-import React from 'react';
 import type { EmblaOptionsType } from 'embla-carousel';
-import { DotButton, useDotButton } from './dot-buttons';
-import { PrevButton, NextButton, usePrevNextButtons } from './arrow-buttons';
 import useEmblaCarousel from 'embla-carousel-react';
+import React from 'react';
+import { NextButton, PrevButton, usePrevNextButtons } from './arrow-buttons';
+import { DotButton, useDotButton } from './dot-buttons';
 import './style.css';
 
 type PropType = {

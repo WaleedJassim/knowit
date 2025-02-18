@@ -1,7 +1,7 @@
+import Banner from '~/assets/images/banner.png';
 import Background from '~/assets/images/bg.png';
 import { Button } from '~/components/ui/button';
 import { Input } from '~/components/ui/input';
-import Banner from '~/assets/images/banner.png';
 
 const Hero = () => {
 	return (

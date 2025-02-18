@@ -1,7 +1,7 @@
+import { StarIcon } from '~/assets/icons';
 import type { Course } from '~/lib/dummy-data';
 import { AvatarGroup } from '../ui/avatar';
 import { Button } from '../ui/button';
-import { StarIcon, StarIcon as StarOutlineIcon } from '~/assets/icons';
 
 const CourseCard = ({ data }: { data: Course }) => {
 	return (
