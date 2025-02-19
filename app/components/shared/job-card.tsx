@@ -1,4 +1,4 @@
-import { ExternalLink } from 'lucide-react';
+import { ExternalLinkIcon } from '~/assets/icons';
 import { Button } from '../ui/button';
 
 const JobCard = () => {
@@ -29,7 +29,7 @@ const JobCard = () => {
 						</div>
 						<Button>
 							Apply now
-							<ExternalLink />
+							<ExternalLinkIcon />
 						</Button>
 					</div>
 					<p className="pt-2">

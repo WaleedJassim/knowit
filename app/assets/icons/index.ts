@@ -1,6 +1,15 @@
-import MailIcon from './mail.svg?react';
+import ExternalLinkIcon from './external-link.svg?react';
+import FilterIcon from './filter.svg?react';
 import HeadPhoneIcon from './headphones.svg?react';
-import StarIcon from './star.svg?react';
+import MailIcon from './mail.svg?react';
 import PlayIcon from './play.svg?react';
+import StarIcon from './star.svg?react';
 
-export { MailIcon, HeadPhoneIcon, StarIcon, PlayIcon };
+export {
+	ExternalLinkIcon,
+	FilterIcon,
+	HeadPhoneIcon,
+	MailIcon,
+	PlayIcon,
+	StarIcon,
+};

@@ -1,4 +1,4 @@
-import { Filter } from 'lucide-react';
+import { FilterIcon } from '~/assets/icons';
 import CourseCard from '~/components/shared/course-card';
 import { Button } from '~/components/ui/button';
 import { Input } from '~/components/ui/input';
@@ -31,7 +31,7 @@ const CoursesPage = () => {
 						))}
 					</div>
 					<Button>
-						<Filter />
+						<FilterIcon />
 						Filters
 					</Button>
 				</div>
