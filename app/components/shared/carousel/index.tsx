@@ -1,16 +1,20 @@
 import type { EmblaOptionsType } from 'embla-carousel';
 import useEmblaCarousel from 'embla-carousel-react';
 import React from 'react';
-import { NextButton, PrevButton, usePrevNextButtons } from './arrow-buttons';
-import { DotButton, useDotButton } from './dot-buttons';
+import {
+	NextButton,
+	PrevButton,
+	usePrevNextButtons,
+} from './components/arrow-buttons';
+import { DotButton, useDotButton } from './components/dot-buttons';
 import './style.css';
 
 type PropType = {
-	slides: React.ReactNode[]; // Accept React components as slides
+	slides: React.ReactNode[];
 	options?: EmblaOptionsType;
 };
 
-const AlignedCarousel: React.FC<PropType> = (props) => {
+const AlignCarousel: React.FC<PropType> = (props) => {
 	const { slides, options } = props;
 	const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
@@ -25,11 +29,11 @@ const AlignedCarousel: React.FC<PropType> = (props) => {
 	} = usePrevNextButtons(emblaApi);
 
 	return (
-		<section className="embla">
-			<div className="embla__viewport" ref={emblaRef}>
-				<div className="embla__container">
+		<section className="embla-align">
+			<div className="embla__viewport-align" ref={emblaRef}>
+				<div className="embla__container-align">
 					{slides.map((slideContent, index) => (
-						<div className="embla__slide" key={index}>
+						<div className="embla__slide-align" key={index}>
 							{slideContent}
 						</div>
 					))}
@@ -52,4 +56,4 @@ const AlignedCarousel: React.FC<PropType> = (props) => {
 	);
 };
 
-export default AlignedCarousel;
+export default AlignCarousel;

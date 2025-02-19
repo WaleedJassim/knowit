@@ -1,5 +1,5 @@
 import type { EmblaOptionsType } from 'embla-carousel';
-import AlignedCarousel from '~/components/shared/aligned-carousel';
+import AlignCarousel from '~/components/shared/carousel';
 import JobCard from '~/components/shared/job-card';
 
 const OPTIONS: EmblaOptionsType = { containScroll: false };
@@ -17,7 +17,7 @@ const Vacancies = () => {
 				</p>
 			</div>
 			<div className="w-full mt-12">
-				<AlignedCarousel slides={SLIDES} options={OPTIONS} />
+				<AlignCarousel slides={SLIDES} options={OPTIONS} />
 			</div>
 		</div>
 	);
