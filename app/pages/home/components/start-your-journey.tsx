@@ -1,5 +1,3 @@
-import React from 'react';
-
 const StartYourJourney = () => {
 	return (
 		<div className="bg-white sm:px-32 px-6 py-8 flex flex-col gap-10 text-primary font-medium">

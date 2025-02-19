@@ -1,5 +1,6 @@
 import type { EmblaOptionsType } from 'embla-carousel';
 import AlignCarousel from '~/components/shared/carousel';
+import EmblaCarousel from '~/components/shared/scale-carousel';
 import SuccessStoryCard from '~/components/shared/success-story-card';
 
 const OPTIONS: EmblaOptionsType = { containScroll: false };
@@ -22,7 +23,7 @@ const SuccessStories = () => {
 				</p>
 			</div>
 			<div className="w-full mt-12">
-				<AlignCarousel slides={SLIDES} options={OPTIONS} />
+				<EmblaCarousel slides={SLIDES} options={OPTIONS} />
 			</div>
 		</div>
 	);

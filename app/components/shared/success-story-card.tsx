@@ -2,7 +2,7 @@ import { QuotesIcon } from '~/assets/icons';
 
 const SuccessStoryCard = () => {
 	return (
-		<div className="bg-background p-6 relative flex gap-6 rounded-2xl text-white">
+		<div className="bg-background p-6 relative flex gap-6 rounded-2xl text-white embla__slide__number-scale">
 			<div className="absolute top-4 right-4">
 				<QuotesIcon />
 			</div>
@@ -13,7 +13,7 @@ const SuccessStoryCard = () => {
 					className="w-full h-auto"
 				/>
 			</div>
-			<div className="flex flex-col gap-4 w-[60%]">
+			<div className="flex flex-col gap-4 w-[60%] mt-6">
 				<p>
 					Thanks to Knowit's expert training, I secured a position with XYZ
 					Corp, and my career is now on the fast track! The comprehensive
