@@ -5,6 +5,7 @@ import MailIcon from './mail.svg?react';
 import PlayIcon from './play.svg?react';
 import StarIcon from './star.svg?react';
 import QuotesIcon from './quotes.svg?react';
+import ArrowRightIcon from './arrow-right.svg?react';
 
 export {
 	ExternalLinkIcon,
@@ -14,4 +15,5 @@ export {
 	PlayIcon,
 	StarIcon,
 	QuotesIcon,
+	ArrowRightIcon,
 };

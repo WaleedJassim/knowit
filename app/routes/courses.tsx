@@ -1,5 +1,6 @@
 import CoursesPage from '~/pages/courses';
 import type { Route } from './+types/courses';
+import BreadcrumbHeader from '~/components/shared/breadcrumb-header';
 
 export function meta({}: Route.MetaArgs) {
 	return [
@@ -9,5 +10,10 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Courses() {
-	return <CoursesPage />;
+	return (
+		<>
+			<BreadcrumbHeader />
+			<CoursesPage />
+		</>
+	);
 }
