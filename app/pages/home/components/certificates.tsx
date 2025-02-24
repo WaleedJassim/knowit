@@ -3,14 +3,14 @@ import { CertificateImages } from '~/assets/images/certificates';
 
 const Certificates = () => {
 	return (
-		<div className="bg-white py-2">
+		<div className="bg-white md:py-2">
 			<div
-				className="bg-background bg-cover bg-no-repeat px-12 py-16 flex sm:flex-row flex-col justify-evenly gap-6"
+				className="bg-background bg-cover bg-no-repeat px-12 py-16 flex md:flex-row flex-col justify-evenly gap-6"
 				style={{
 					backgroundImage: `url(${Background})`,
 				}}
 			>
-				<div className="flex flex-col gap-4 sm:w-1/3">
+				<div className="flex flex-col gap-4 md:w-1/3">
 					<div className="h-1 bg-primary w-[70px] rounded-full"></div>
 					<p className="text-[28px] font-semibold text-(--color-primary)">
 						Accelerate Your Career with
@@ -22,7 +22,7 @@ const Certificates = () => {
 						open doors to exciting opportunities
 					</p>
 				</div>
-				<div className="grid grid-cols-2 sm:grid-cols-4 gap-14">
+				<div className="grid grid-cols-2 md:grid-cols-4 gap-14">
 					{CertificateImages.map((image, index) => (
 						<div
 							key={index}

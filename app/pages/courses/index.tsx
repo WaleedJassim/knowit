@@ -22,7 +22,7 @@ const CoursesPage = () => {
 					<div className="flex items-center gap-4">
 						<Input
 							placeholder="Search your Course"
-							className="sm:w-md rounded-2xl"
+							className="md:w-md rounded-2xl"
 						/>
 						{filters.map((item, index) => (
 							<Button key={index} className="bg-white border-white">

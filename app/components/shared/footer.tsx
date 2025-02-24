@@ -45,7 +45,7 @@ export const links: TLink[] = [
 const Footer = () => {
 	return (
 		<div className="bg-background">
-			<div className="px-6 py-12 border-b border-white flex sm:flex-row flex-col justify-between sm:items-center">
+			<div className="px-6 py-12 border-b border-white flex md:flex-row flex-col justify-between md:items-center">
 				<div className="flex flex-col gap-2 text-[15px]">
 					<p className="font-bold text-lg">Address</p>
 					<p>Knowit Education</p>

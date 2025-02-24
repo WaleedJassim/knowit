@@ -3,7 +3,7 @@ import { PartnerImages } from '~/assets/images/partners';
 
 const Partners = () => {
 	return (
-		<div className="sm:p-12 p-6 flex flex-col gap-12">
+		<div className="md:p-12 p-6 flex flex-col gap-12">
 			<div className="flex items-center justify-between gap-4">
 				<div className="flex flex-col gap-8 font-medium w-full">
 					<div>
@@ -20,11 +20,11 @@ const Partners = () => {
 						Explore career openings with our esteemed partners today!
 					</p>
 				</div>
-				<div className="w-full h-auto hidden sm:block">
+				<div className="w-full h-auto hidden md:block">
 					<img src={Map} alt="" className="w-full" />
 				</div>
 			</div>
-			<div className="grid grid-cols-2 sm:grid-cols-6 gap-14 mx-auto">
+			<div className="grid grid-cols-2 md:grid-cols-6 gap-14 mx-auto">
 				{PartnerImages.map((image, index) => (
 					<div
 						key={index}

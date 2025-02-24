@@ -2,7 +2,7 @@ import { PlayIcon } from '~/assets/icons';
 
 const AboutUs = () => {
 	return (
-		<div className="flex items-center gap-6 flex-col sm:flex-row p-6">
+		<div className="flex items-center gap-6 flex-col md:flex-row p-6">
 			<div className="relative overflow-hidden rounded-lg w-full">
 				<img
 					src="https://s3-alpha-sig.figma.com/img/917d/5461/fea9682af268f536ad3cba594465f0df?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QrXemvqQwO0DqqcDONbv-CiiJzSa~fLzBBJf3Q7jOlyz1zDhngwYBmCFEgYP-QMWw8J6PuZWh6jYWAM~rvUwLZB3cR37jexOpafn4ApRAiEuYgaahbcNSY-RmkDwXsjkDEuDBE1Rl-Wh5Vn~5TMWA5VeykgYcmEG2CKMcKst7w6Y4YM0K98brihzBC08uh2KetdANfFeusV8y1E7HxZEQx86wQmbICcIN1sALsAL5ZpcFgvKYMIrLZOL6qu37I8mhNbYjpXuU255SKX4g42mVDU2xlzmp42Z-nhy3t1dFd--WMNf~7TgU3f9o~23vs48KkQSWur0ST9XTS1sz9SFlw__"

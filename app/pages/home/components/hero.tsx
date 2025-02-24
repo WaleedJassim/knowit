@@ -7,7 +7,7 @@ const Hero = () => {
 	return (
 		<div>
 			<div
-				className="h-full flex flex-col-reverse sm:flex-row items-center justify-evenly w-full bg-cover bg-no-repeat sm:px-32 px-6"
+				className="h-full flex flex-col-reverse md:flex-row items-center justify-evenly w-full bg-cover bg-no-repeat md:px-32 px-6"
 				style={{
 					backgroundImage: `url(${Background})`,
 					backgroundPosition: 'center top -86px',
@@ -21,7 +21,7 @@ const Hero = () => {
 						<br /> your <span className="text-white">bright career.</span>
 					</p>
 					<Button>Start Learning</Button>
-					<p className="sm:mt-12 mb-12">
+					<p className="md:mt-12 max-md:mb-6">
 						Trusted since 2016, we’ve been empowering individuals and businesses
 						with reliable solutions, fostering growth, and delivering excellence
 						every step of the way
@@ -31,7 +31,7 @@ const Hero = () => {
 					<img src={Banner} alt="" />
 				</div>
 			</div>
-			<div className="py-10 sm:px-32 px-6 bg-primary">
+			<div className="py-10 md:px-32 px-6 bg-primary md:block hidden">
 				<Input placeholder="Search courses, jobs, or educators" />
 			</div>
 		</div>
