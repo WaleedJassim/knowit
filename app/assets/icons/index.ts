@@ -6,6 +6,7 @@ import PlayIcon from './play.svg?react';
 import StarIcon from './star.svg?react';
 import QuotesIcon from './quotes.svg?react';
 import ArrowRightIcon from './arrow-right.svg?react';
+import HamburgerIcon from './hamburger.svg?react';
 
 export {
 	ExternalLinkIcon,
@@ -16,4 +17,5 @@ export {
 	StarIcon,
 	QuotesIcon,
 	ArrowRightIcon,
+	HamburgerIcon,
 };
