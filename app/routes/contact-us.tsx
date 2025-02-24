@@ -4,7 +4,7 @@ import type { Route } from './+types/courses';
 
 export function meta({}: Route.MetaArgs) {
 	return [
-		{ title: 'Courses' },
+		{ title: 'Contact Us' },
 		{ name: 'description', content: 'Professional Learning App' },
 	];
 }

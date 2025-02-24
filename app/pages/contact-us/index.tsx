@@ -20,7 +20,7 @@ const ContactUsPage = () => {
 	return (
 		<div className="bg-white md:px-32 px-6 md:py-8 py-6">
 			<div className="w-full bg-background rounded-[18px] p-6 flex items-center">
-				<div className="flex items-center justify-between h-full gap-10 flex-col gap-4 w-full">
+				<div className="flex items-center justify-between h-full gap-10 flex-col w-full">
 					<p className="text-4xl font-bold">
 						Get in <span className="text-(--color-primary)">touch,</span>
 					</p>
