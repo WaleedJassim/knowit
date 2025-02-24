@@ -7,6 +7,10 @@ import StarIcon from './star.svg?react';
 import QuotesIcon from './quotes.svg?react';
 import ArrowRightIcon from './arrow-right.svg?react';
 import HamburgerIcon from './hamburger.svg?react';
+import EmailIcon from './email.svg?react';
+import LocationIcon from './location.svg?react';
+import TelephoneIcon from './telephone.svg?react';
+import SendIcon from './send.svg?react';
 
 export {
 	ExternalLinkIcon,
@@ -18,4 +22,8 @@ export {
 	QuotesIcon,
 	ArrowRightIcon,
 	HamburgerIcon,
+	EmailIcon,
+	LocationIcon,
+	TelephoneIcon,
+	SendIcon,
 };

@@ -14,7 +14,7 @@ const BreadcrumbHeader = () => {
 	const pathSegments = pathname.split('/').filter(Boolean);
 
 	return (
-		<div className="bg-white p-6 text-primary">
+		<div className="bg-[#F1F2F4] p-6 text-primary">
 			<Breadcrumb>
 				<BreadcrumbList>
 					<BreadcrumbItem>
