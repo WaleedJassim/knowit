@@ -3,7 +3,7 @@ import { Button } from '../ui/button';
 
 const JobCard = () => {
 	return (
-		<div className="border border-[#1414140D] rounded-lg p-6 text-secondary">
+		<div className="border border-[#1414140D] rounded-lg p-6 text-secondary bg-white">
 			<div className="flex items-start gap-6">
 				<div className="w-[72px] h-[72px] rounded-sm overflow-hidden">
 					<img
