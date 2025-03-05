@@ -13,11 +13,11 @@ const Sidebar = () => {
 	return (
 		<Sheet>
 			<SheetTrigger asChild>
-				<button className="px-3 cursor-pointer">
+				<button className="pe-3 cursor-pointer">
 					<HamburgerIcon className="w-[30px] h-6" />
 				</button>
 			</SheetTrigger>
-			<SheetContent side="left">
+			<SheetContent side="left" className="border-none">
 				<SheetHeader>
 					<SheetTitle>Are you absolutely sure?</SheetTitle>
 					<SheetDescription>

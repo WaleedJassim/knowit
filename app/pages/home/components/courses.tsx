@@ -10,7 +10,7 @@ const Courses = () => {
 		<div className="bg-white pb-2">
 			<div className="bg-background px-6 py-16 flex flex-col gap-6">
 				<div className="flex items-center gap-4 justify-between">
-					<div className="flex items-center gap-4">
+					<div className="flex items-center flex-wrap gap-4">
 						<Input
 							placeholder="Search your Course"
 							className="md:w-md rounded-2xl"

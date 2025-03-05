@@ -19,7 +19,7 @@ export const courses: Course[] = [
 	{
 		id: 1,
 		imageUrl:
-			'https://s3-alpha-sig.figma.com/img/7db3/9171/ca44522c9a39d18e49caf5af607e1696?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=XQuequG8zxDMR6t29REX5378DNCAUXnUCT-OpevyZKc30A1zoL7bl0pU~e4gUoFBP~iXAcOFoHTWBsuu1SywofsIt9YSHbGXWgrDTH04Sbq5vaP5zHmKkbth0xNxLAy2avzJO85jitfj9z9PpCkEnLDf4wYIn7VUFnLSC01WjB-38aq87RWMmaBOLRUHEhZWFskR9K7HqTenfGQuo94E2U9jxtnUHZOZ6Bfs9pQHS9fonkHmFgFIMDgOEvJ2nSNRXTLAFMGjojAFgQ1I6xGWDhXmL7k0miTteCz0kgEWKWSvlt5ulUCJVdz9umCe9zF1UVCUvo2LtqW6qfe0dLlXjg__',
+			'https://s3-alpha-sig.figma.com/img/7db3/9171/ca44522c9a39d18e49caf5af607e1696?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OmKHAjE41qowQ~Kj3JOja3NKZOfVFt0lafiXN92gWLVcyD~ubkmJN90DJAVm4XxvQu5HXNpoyKKEDpEr~OOgnfqpOFEbrtXy2LRs10OaYAGBpg~JiWSa38O6tT3zi0NymNlSlGoJRfoW2nHVcHDk3Nbwr4aUJJ60rtlUU9a1pxNlPiA6uGnkA2v6u4O~mo6epjQCI5c0Lr2YiiHcYcF5YsffkGlP9oK8GwZSWeqAeszOWsrDsJS8UpLt73Tmgso81X0ETAX~Pqe0qulII1Ccg~Hmh6M4A0GLbkJYkf8dOBqtifL8n5nhZ~-z4yWYA9yX7XpzivwHE2U6FWxo~x0wgA__',
 		courseName: 'Mechanical QA QC',
 		description:
 			'Mechanical QA QC Course from Ambit Automation covers all major aspects of the QA QC Course.',

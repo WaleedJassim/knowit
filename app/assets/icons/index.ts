@@ -11,6 +11,7 @@ import EmailIcon from './email.svg?react';
 import LocationIcon from './location.svg?react';
 import TelephoneIcon from './telephone.svg?react';
 import SendIcon from './send.svg?react';
+import ArrowUpRightIcon from './arrow-upright.svg?react';
 
 export {
 	ExternalLinkIcon,
@@ -26,4 +27,5 @@ export {
 	LocationIcon,
 	TelephoneIcon,
 	SendIcon,
+	ArrowUpRightIcon,
 };

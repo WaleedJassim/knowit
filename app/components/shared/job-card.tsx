@@ -5,10 +5,11 @@ const JobCard = () => {
 	return (
 		<div className="border border-[#1414140D] rounded-lg p-6 text-secondary bg-white">
 			<div className="flex items-start gap-6">
-				<div className="w-[72px] h-[72px] rounded-sm overflow-hidden">
+				<div className="w-32 aspect-square rounded-sm overflow-hidden">
 					<img
-						src="https://s3-alpha-sig.figma.com/img/d12d/6739/2dc95162474d80554696fca0be6144bc?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=PdEwl2sTSvtmjD7NdhCitr-UyOzwGUvD7ucr4ea-LHpKVpb3mf~8MxAs0RwsaKWxp-IyEsLn~E~bExTgjyh0E6HeVoiDEwT6CY-Ec7uLfT27ooFePbAPWSH9gHfFGMgyuyP43RN-kryquqvW4a2uomLeJ~J-zy5fOq1oSRzlHTW4TpY4rmM1giAzu1meHbANbAYR-QODgV~P4XHrkG3B3SEthGQxnPszbNMQrqcJAEqC5YbIAiFYpc07vEP7Yty-a10KJboOyYt6LW4xF-UF8DQDtEz0Mmd8WPFWhOvg6sM6P342SBROrgw4n4zUovSSpbEXbNEAC45XY-0zsOcB-w__"
+						src="https://s3-alpha-sig.figma.com/img/d12d/6739/2dc95162474d80554696fca0be6144bc?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TRUaBH~8FBrXsYdKwcmygWXJyhc8Rj9CDPCHYlmhLSGM9odufbC79Pb3QwrMvuDmmt2r~tN1JHlzTJmhp6bNf1hd9DFJtzbpRm8ktFWr~JVfUuGZAGrhni5dcsJ6A8W6GNOCiveIG9ZmMkH0lVMdu3In9tnoy70ZLEzlgQK7XdkNtnI7Rj0ZG40rTwPHtKi9OLPrFuDEp39-3HonyaS9byxYtbLKoZMfHn6bsX7Cy7ANZiLzsJeVKKtGBs9r9kscPcS9wP-01zKn2WN0Rbw0JrZE4pxXks8ya~AakWSl7il32kgye9XuqbDOcavg9c4Pig8NsK5mzpNdGsup6XTJDQ__"
 						alt=""
+						className="w-full h-full object-cover"
 					/>
 				</div>
 				<div className="flex flex-col gap-1">
