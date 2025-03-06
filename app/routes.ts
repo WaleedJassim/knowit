@@ -12,5 +12,6 @@ export default [
 		route('/contact', './routes/contact-us.tsx'),
 		route('/vacancies', './routes/vacancies.tsx'),
 		route('/blog', './routes/blog.tsx'),
+		route('/placements', './routes/placements.tsx'),
 	]),
 ] satisfies RouteConfig;
