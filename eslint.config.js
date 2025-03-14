@@ -12,4 +12,10 @@ export default [
 	...tseslint.configs.recommended,
 	pluginReact.configs.flat.recommended,
 	prettier,
+	{
+		rules: {
+			'react/react-in-jsx-scope': 'off',
+			'no-empty-pattern': 'off',
+		},
+	},
 ];
