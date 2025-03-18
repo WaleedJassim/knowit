@@ -31,7 +31,7 @@ const Navbar = () => {
 					</NavLink>
 				))}
 			</div>
-			<div className="hidden md:flex items-center gap-4">
+			<div className="hidden md:flex items-center gap-4 invisible">
 				<Button variant="outline">Login</Button>
 				<Button>Register</Button>
 			</div>

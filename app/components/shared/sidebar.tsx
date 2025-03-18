@@ -34,7 +34,7 @@ const Sidebar = () => {
 					<SheetClose className="mb-0" asChild>
 						<ArrowLeftIcon />
 					</SheetClose>
-					<div className="flex items-center gap-4">
+					<div className="flex items-center gap-4 invisible">
 						<Button variant="outline">Login</Button>
 						<Button>Register</Button>
 					</div>
