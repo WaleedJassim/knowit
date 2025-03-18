@@ -23,7 +23,7 @@ const OurTeamPage = () => {
 				</div>
 			</div>
 			<div className="flex gap-16 md:flex-row flex-col justify-between items-center mt-24">
-				{Array.from({ length: 5 }).map((_, index) => (
+				{Array.from({ length: 4 }).map((_, index) => (
 					<TeamMemberCard key={index} />
 				))}
 			</div>
