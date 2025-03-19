@@ -16,6 +16,7 @@ import ArrowRightPrimaryIcon from './arrow-right-primary.svg?react';
 import ArrowLeftIcon from './arrow-left.svg?react';
 import CircleIcon from './circle.svg?react';
 import CheckIcon from './check.svg?react';
+import WhatsAppIcon from './whatsapp.svg?react';
 
 export {
 	ExternalLinkIcon,
@@ -36,4 +37,5 @@ export {
 	ArrowLeftIcon,
 	CircleIcon,
 	CheckIcon,
+	WhatsAppIcon,
 };

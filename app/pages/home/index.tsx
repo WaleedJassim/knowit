@@ -1,3 +1,4 @@
+import WelcomeModal from '~/components/shared/welcome-modal';
 import AboutUs from './components/about-us';
 import Certificates from './components/certificates';
 import Courses from './components/courses';
@@ -18,6 +19,9 @@ const HomePage = () => {
 			<Partners />
 			<SuccessStories />
 			<StartYourJourney />
+			<div className="fixed right-0 top-1/2 -translate-y-1/2">
+				<WelcomeModal />
+			</div>
 		</>
 	);
 };
