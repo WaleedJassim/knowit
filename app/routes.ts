@@ -9,6 +9,7 @@ export default [
 	layout('./pages/layout.tsx', [
 		index('./routes/home.tsx'),
 		route('/courses', './routes/courses.tsx'),
+		route('/courses/:id', './routes/course-details.tsx'),
 		route('/contact', './routes/contact-us.tsx'),
 		route('/vacancies', './routes/vacancies.tsx'),
 		route('/vacancies/:id', './routes/vacancy-details.tsx'),

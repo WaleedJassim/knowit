@@ -2,8 +2,13 @@ import { StarIcon } from '~/assets/icons';
 import type { Course } from '~/lib/dummy-data';
 import { AvatarGroup } from '../ui/avatar';
 import { Button } from '../ui/button';
+import { Link } from 'react-router';
 
-const CourseCard = ({ data }: { data: Course }) => {
+type CourseProps = {
+	data: Course;
+};
+
+const CourseCard = ({ data }: CourseProps) => {
 	return (
 		<div className="bg-white w-72 rounded-[14px] overflow-hidden text-primary flex flex-col gap-6 hover:scale-105">
 			<div className="relative">
@@ -39,9 +44,11 @@ const CourseCard = ({ data }: { data: Course }) => {
 							₹ {data?.originalPrice}
 						</p>
 					</div>
-					<Button className="hover:bg-background hover:border-background">
-						Enroll Now
-					</Button>
+					<Link to={`/courses/${data.id}`}>
+						<Button className="hover:bg-background hover:border-background">
+							Enroll Now
+						</Button>
+					</Link>
 				</div>
 			</div>
 		</div>

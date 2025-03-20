@@ -9,7 +9,7 @@ export function meta({}: Route.MetaArgs) {
 	];
 }
 
-export default function Courses() {
+export default function Blog() {
 	return (
 		<>
 			<BreadcrumbHeader />

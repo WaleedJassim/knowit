@@ -9,7 +9,7 @@ export function meta({}: Route.MetaArgs) {
 	];
 }
 
-export default function ContactUs() {
+export default function VacancyDetails() {
 	return (
 		<>
 			<BreadcrumbHeader />
