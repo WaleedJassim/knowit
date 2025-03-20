@@ -1,8 +1,13 @@
 import { ExternalLinkIcon } from '~/assets/icons';
 import { Button } from '../ui/button';
 import JobImage from '~/assets/dummy/job.png';
+import { Link } from 'react-router';
 
-const JobCard = () => {
+type JobCardProps = {
+	id?: string | number;
+};
+
+const JobCard = ({ id }: JobCardProps) => {
 	return (
 		<div className="border border-[#1414140D] rounded-lg p-6 text-secondary bg-white">
 			<div className="flex items-start gap-6">
@@ -25,10 +30,12 @@ const JobCard = () => {
 							<p>Full time</p>
 							<p>29 min ago</p>
 						</div>
-						<Button>
-							Apply now
-							<ExternalLinkIcon />
-						</Button>
+						<Link to={`/vacancies/${id}`}>
+							<Button>
+								Apply now
+								<ExternalLinkIcon />
+							</Button>
+						</Link>
 					</div>
 					<p className="pt-2">
 						We are seeking a detail-oriented QA/QC Mechanical Engineer to

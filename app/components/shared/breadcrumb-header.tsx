@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router';
+import { Fragment } from 'react/jsx-runtime';
 import {
 	Breadcrumb,
 	BreadcrumbItem,
@@ -14,7 +15,7 @@ const BreadcrumbHeader = () => {
 	const pathSegments = pathname.split('/').filter(Boolean);
 
 	return (
-		<div className="bg-[#F1F2F4] p-6 text-primary">
+		<div className="bg-[#F1F2F4] p-6 text-primary md:block hidden">
 			<Breadcrumb>
 				<BreadcrumbList>
 					<BreadcrumbItem>
@@ -22,25 +23,30 @@ const BreadcrumbHeader = () => {
 							<Link to="/">Home</Link>
 						</BreadcrumbLink>
 					</BreadcrumbItem>
-					<BreadcrumbSeparator />
+
 					{pathSegments.map((segment, index) => {
 						const path = `/${pathSegments.slice(0, index + 1).join('/')}`;
 						const route = routes.find((r) => r.path === path);
 						const isLast = index === pathSegments.length - 1;
-						const name = route?.name || segment;
+						const isID = !isNaN(Number(segment)); // Check if segment is a number (ID)
 
 						return (
-							<BreadcrumbItem key={path}>
-								{!isLast ? (
-									<BreadcrumbLink asChild>
-										<Link to={path} className="capitalize">
-											{name}
-										</Link>
-									</BreadcrumbLink>
-								) : (
-									<BreadcrumbPage>{name}</BreadcrumbPage>
-								)}
-							</BreadcrumbItem>
+							<Fragment key={path}>
+								<BreadcrumbSeparator />
+								<BreadcrumbItem>
+									{!isLast ? (
+										<BreadcrumbLink asChild>
+											<Link to={path} className="capitalize">
+												{isID ? `${segment}` : route?.name || segment}
+											</Link>
+										</BreadcrumbLink>
+									) : (
+										<BreadcrumbPage>
+											{isID ? `${segment}` : route?.name || segment}
+										</BreadcrumbPage>
+									)}
+								</BreadcrumbItem>
+							</Fragment>
 						);
 					})}
 				</BreadcrumbList>

@@ -18,13 +18,13 @@ const InterestedTopics = [
 
 const ContactUsPage = () => {
 	return (
-		<div className="bg-white md:px-32 px-6 md:py-8 py-6">
+		<div className="md:bg-white bg-background md:px-32 px-6 md:py-8 py-6">
 			<div className="w-full bg-background rounded-[18px] p-6 flex items-center md:flex-row flex-col">
 				<div className="flex md:items-center justify-between h-full gap-10 flex-col w-full">
-					<p className="text-4xl font-bold">
+					<p className="text-4xl font-bold md:text-left text-center">
 						Get in <span className="text-(--color-primary)">touch,</span>
 					</p>
-					<div className="flex items-center flex-col gap-3">
+					<div className="flex md:items-center flex-col gap-3">
 						<Link
 							to="mailto:knowitedu@gmail.com"
 							className="hover:bg-primary/20 p-4 border-2 border-background hover:border-primary rounded-xl w-full flex items-center gap-3 px-8"

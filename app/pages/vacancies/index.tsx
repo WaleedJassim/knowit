@@ -127,7 +127,7 @@ const VacanciesPage = () => {
 							{Array(6)
 								.fill(6)
 								.map((_, index) => (
-									<JobCard />
+									<JobCard id={index} />
 								))}
 						</div>
 					</div>
