@@ -1,9 +1,14 @@
 import { ArrowUpRightIcon } from '~/assets/icons';
 import BlogImage from '~/assets/dummy/blog.jpeg';
+import { Link } from 'react-router';
 
-const BlogCard = () => {
+type BlogCardProps = {
+	id?: string | number;
+};
+
+const BlogCard = ({ id }: BlogCardProps) => {
 	return (
-		<div className="w-full flex flex-col gap-3">
+		<Link to={`/blog/${id}`} className="w-full flex flex-col gap-3">
 			<img src={BlogImage} alt="" />
 			<p className="font-semibold text-sm">Alec Whitten • 1 Jan 2025</p>
 			<div className="flex items-center gap-2 justify-between">
@@ -18,7 +23,7 @@ const BlogCard = () => {
 				As welding materials continue to evolve, new advancements promise better
 				strength, durability..
 			</p>
-		</div>
+		</Link>
 	);
 };
 

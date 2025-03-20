@@ -14,6 +14,7 @@ export default [
 		route('/vacancies', './routes/vacancies.tsx'),
 		route('/vacancies/:id', './routes/vacancy-details.tsx'),
 		route('/blog', './routes/blog.tsx'),
+		route('/blog/:id', './routes/blog-details.tsx'),
 		route('/placements', './routes/placements.tsx'),
 		route('/team', './routes/team.tsx'),
 		route('/about', './routes/about.tsx'),

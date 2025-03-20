@@ -4,11 +4,11 @@ import { AvatarGroup } from '../ui/avatar';
 import { Button } from '../ui/button';
 import { Link } from 'react-router';
 
-type CourseProps = {
+type CourseCardProps = {
 	data: Course;
 };
 
-const CourseCard = ({ data }: CourseProps) => {
+const CourseCard = ({ data }: CourseCardProps) => {
 	return (
 		<div className="bg-white w-72 rounded-[14px] overflow-hidden text-primary flex flex-col gap-6 hover:scale-105">
 			<div className="relative">

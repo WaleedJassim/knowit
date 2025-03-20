@@ -10,7 +10,7 @@ const BlogPage = () => {
 				{Array(6)
 					.fill(6)
 					.map((_, index) => (
-						<BlogCard key={index} />
+						<BlogCard key={index} id={index} />
 					))}
 			</div>
 		</div>
