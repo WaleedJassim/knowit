@@ -20,7 +20,7 @@ const JobCard = ({ id }: JobCardProps) => {
 						<p className="text-2xl font-medium text-primary">
 							Mechanical Engineer
 						</p>
-						<div className="bg-[#FEF3BF] test-[#B79800] px-1.5 py-1 rounded-[3px] text-xs">
+						<div className="bg-[#FEF3BF] text-[#B79800] px-1.5 py-1 rounded-[3px] text-xs">
 							New post
 						</div>
 					</div>

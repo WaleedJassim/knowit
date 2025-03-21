@@ -17,6 +17,10 @@ import ArrowLeftIcon from './arrow-left.svg?react';
 import CircleIcon from './circle.svg?react';
 import CheckIcon from './check.svg?react';
 import WhatsAppIcon from './whatsapp.svg?react';
+import TelephoneOutlineIcon from './telephone-outline.svg?react';
+import EmailOutlineIcon from './email-outline.svg?react';
+import BookmarkIcon from './bookmark.svg?react';
+import OpenArrowIcon from './open-arrow.svg?react';
 
 export {
 	ExternalLinkIcon,
@@ -38,4 +42,8 @@ export {
 	CircleIcon,
 	CheckIcon,
 	WhatsAppIcon,
+	TelephoneOutlineIcon,
+	EmailOutlineIcon,
+	BookmarkIcon,
+	OpenArrowIcon,
 };
