@@ -21,6 +21,11 @@ import TelephoneOutlineIcon from './telephone-outline.svg?react';
 import EmailOutlineIcon from './email-outline.svg?react';
 import BookmarkIcon from './bookmark.svg?react';
 import OpenArrowIcon from './open-arrow.svg?react';
+import EligibilityIcon from './eligibility.svg?react';
+import StudentIcon from './student.svg?react';
+import CalendarIcon from './calendar.svg?react';
+import ListPointIcon from './list-point.svg?react';
+import CheckGreenIcon from './check-green.svg?react';
 
 export {
 	ExternalLinkIcon,
@@ -46,4 +51,9 @@ export {
 	EmailOutlineIcon,
 	BookmarkIcon,
 	OpenArrowIcon,
+	EligibilityIcon,
+	StudentIcon,
+	CalendarIcon,
+	ListPointIcon,
+	CheckGreenIcon,
 };
